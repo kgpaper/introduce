@@ -7,13 +7,12 @@ const HeaderLayout = styled.div`
   padding-left: 100px;
   padding-right: 32px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #88a3ad;
   font-family: GowunDodum-Regular;
 
   h1 {
     margin: 0;
     font-size: 36px;
-    color: #343a40;
+    color: white;
   }
 
   nav {
@@ -25,21 +24,20 @@ const HeaderLayout = styled.div`
 
   nav ul {
     list-style: none;
-    float: right;
   }
 
   nav ul li {
     padding: 18px;
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
   nav ul li a {
     padding: 18px;
     text-decoration: none;
     display: inline-block;
-    color: black;
+    color: white;
     position: relative;
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0), inset 0 0 1px rgba(0, 0, 0, 0);
@@ -48,8 +46,8 @@ const HeaderLayout = styled.div`
   }
 
   nav ul li a:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.3);
-    color: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px white, inset 0 0 1px rgba(255, 255, 255, 0.3);
+    color: white;
   }
 `;
 
@@ -58,13 +56,16 @@ const Header = () => {
     <HeaderLayout>
       <header>
         <nav>
-          <h1>Hi</h1>
+          <h1>Doyeon Kil</h1>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contect</Link>
             </li>
           </ul>
         </nav>
