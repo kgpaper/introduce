@@ -6,8 +6,21 @@ const HeaderLayout = styled.div`
   padding-top: 48px;
   padding-left: 100px;
   padding-right: 32px;
-  padding-bottom: 24px;
-  font-family: GowunDodum-Regular;
+
+  position: relative;
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+
+  font-family: paybooc-Bold;
+
+  header {
+    position: relative;
+    display: flex;
+    max-width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 
   h1 {
     margin: 0;
@@ -20,6 +33,7 @@ const HeaderLayout = styled.div`
     align-items: center;
     padding: 0.25em;
     height: 55px;
+    float: right;
   }
 
   nav ul {
@@ -55,20 +69,22 @@ const Header = () => {
   return (
     <HeaderLayout>
       <header>
-        <nav>
-          <h1>Doyeon Kil</h1>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contect</Link>
-            </li>
-          </ul>
-        </nav>
+        <h1>Doyeon Kil</h1>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contect</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
     </HeaderLayout>
   );

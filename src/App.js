@@ -14,7 +14,7 @@ import Contact from "./components/Contact";
 const GlobalStyle = createGlobalStyle`
   body {
     background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?cs=srgb&dl=pexels-jakub-novacek-924824.jpg&fm=jpg') no-repeat center center;
-    background-size: cover;
+  
     justify-content: center;
   }
 `;

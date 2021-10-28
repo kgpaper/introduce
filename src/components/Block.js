@@ -2,27 +2,29 @@ import React from "react";
 import styled from "styled-components";
 
 const ContentBlock = styled.div`
-  height: 500px;
+  min-height: 500px;
 
-  position: relative; /* 추후 박스 하단에 추가 버튼을 위치시키기 위한 설정 */
-  background: #f0eceb;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
 
-  margin: 0 auto; /* 페이지 중앙에 나타나도록 설정 */
-
   margin-top: 70px;
-  margin-bottom: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+  margin-right: 70px;
 
   display: flex;
   flex-direction: column;
+  font-family: Cafe24Oneprettynight;
+  color: white;
 `;
 
 const ContentsLayout = styled.div`
-  margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
 `;
 
 const Block = ({ children }) => {
