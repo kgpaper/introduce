@@ -25,9 +25,9 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Block>
-        <Route path="/introduce" exact={true} component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/introduce/" exact={true} component={Home} />
+        <Route path="/introduce/about" component={About} />
+        <Route path="/introduce/contact" component={Contact} />
       </Block>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SiGithub, SiGmail, SiKakao, SiInstagram } from "react-icons/si";
+import { SiGithub, SiInstagram } from "react-icons/si";
 import { VscMail } from "react-icons/vsc";
 
 const ContactLayout = styled.div`
