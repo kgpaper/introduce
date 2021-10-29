@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/introduce/static/css/main.335c1f95.chunk.css",
+    "main.js": "/introduce/static/js/main.b8dc4a82.chunk.js",
+    "main.js.map": "/introduce/static/js/main.b8dc4a82.chunk.js.map",
+    "runtime-main.js": "/introduce/static/js/runtime-main.a997c0f8.js",
+    "runtime-main.js.map": "/introduce/static/js/runtime-main.a997c0f8.js.map",
+    "static/js/2.226d8d6b.chunk.js": "/introduce/static/js/2.226d8d6b.chunk.js",
+    "static/js/2.226d8d6b.chunk.js.map": "/introduce/static/js/2.226d8d6b.chunk.js.map",
+    "index.html": "/introduce/index.html",
+    "static/css/main.335c1f95.chunk.css.map": "/introduce/static/css/main.335c1f95.chunk.css.map",
+    "static/js/2.226d8d6b.chunk.js.LICENSE.txt": "/introduce/static/js/2.226d8d6b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/introduce/static/media/Cafe24SsurroundAir.2477297b.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a997c0f8.js",
+    "static/js/2.226d8d6b.chunk.js",
+    "static/css/main.335c1f95.chunk.css",
+    "static/js/main.b8dc4a82.chunk.js"
+  ]
+}
