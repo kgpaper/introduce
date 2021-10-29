@@ -25,7 +25,7 @@ const App = () => {
       <GlobalStyle />
       <Header />
       <Block>
-        <Route path="/" exact={true} component={Home} />
+        <Route path="/introduce" exact={true} component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Block>
