@@ -23,7 +23,7 @@ const HeaderLayout = styled.div`
   }
 
   h1 {
-    margin: 0;
+    margin-left: -30px;
     font-size: 36px;
     color: white;
   }
@@ -80,7 +80,7 @@ const Header = () => {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/contact">Contect</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>

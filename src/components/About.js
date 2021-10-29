@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutLayout = styled.div`
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
@@ -12,7 +11,6 @@ const AboutLayout = styled.div`
     grid-auto-rows: minmax(auto);
     grid-auto-flow: dense;
     grid-gap: 5px;
-    margin-left: 50px;
   }
 
   @media (min-width: 1200px) {
@@ -34,20 +32,22 @@ const Image = styled.div`
   background-size: cover;
   margin: 0 auto;
 
-  @media (min-width: 850px) {
+  @media (min-width: 992px) {
     width: 270px;
     height: 450px;
     border-radius: 16px;
     background-image: url("img/me.jpeg");
     background-position: center;
     background-size: cover;
+    margin-left: -40px;
   }
 `;
 
 const GridWrapper = styled.div`
-  margin: 20px auto;
-  @media (min-width: 850px) {
-    margin: 20px 80px auto;
+  margin: 30px auto;
+
+  @media (min-width: 992px) {
+    margin: 0 auto;
   }
 `;
 
@@ -72,25 +72,29 @@ const About = () => {
     <AboutLayout>
       <Image />
       <GridWrapper>
-        <h1>소개</h1>
+        <h1>About Me</h1>
         <InfoGrid>
           <div>
-            <h3>연혁</h3>
+            <h3>Achievement</h3>
             <p>2011.03 ~ 2014.02 &nbsp;&nbsp;중마고등학교</p>
             <p>2014.03 ~ 2021.02 &nbsp;&nbsp;부경대학교 컴퓨터공학과</p>
-            <p>2021. 11 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wecode></p>
+            <p>2021. 11 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>wecode</p>
           </div>
           <div>
-            <h3>연혁</h3>
-            <p>2011.03 ~ 2014.02 중마고등학교</p>
+            <h3>Stack</h3>
+            <p>HTML/CSS</p>
+            <p>Javascript</p>
+            <p>Python3</p>
           </div>
           <div>
-            <h3>연혁</h3>
-            <p>2011.03 ~ 2014.02 중마고등학교</p>
+            <h3>Like</h3>
+            <p>🎹 음악을 매우 좋아합니다</p>
+            <p>🎮 게임을 매우 좋아합니다</p>
+            <p>🚗 드라이빙을 매우 좋아합니다</p>
           </div>
           <div>
-            <h3>연혁</h3>
-            <p>2011.03 ~ 2014.02 중마고등학교</p>
+            <h3>&nbsp;</h3>
+            <p>위코더 여러분과 함께 성장하고 싶습니다!</p>
           </div>
         </InfoGrid>
       </GridWrapper>

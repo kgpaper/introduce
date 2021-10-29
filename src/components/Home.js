@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./Card";
+import Profile from "./Profile";
 
 const Home = () => {
   return (
     <>
-      <Card></Card>
+      <Profile></Profile>
     </>
   );
 };

@@ -20,9 +20,7 @@ const CardTemplate = styled.div`
 `;
 
 const CardLayout = styled.div`
-  margin: 20px auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 auto;
   diplay: flex;
   text-align: center;
 ;
@@ -30,8 +28,8 @@ const CardLayout = styled.div`
 `;
 
 const Circle1 = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   border: 10px solid #38567d;
   border-radius: 50%;
   margin: 20px auto;
@@ -39,8 +37,8 @@ const Circle1 = styled.div`
 `;
 
 const Circle2 = styled.div`
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
   border: 7px solid #548ba1;
   border-radius: 50%;
   position: absolute;
@@ -51,7 +49,7 @@ const Circle2 = styled.div`
   background-size: cover;
 `;
 
-const Card = () => {
+const Profile = () => {
   return (
     <CardTemplate>
       <Circle1>
@@ -62,9 +60,10 @@ const Card = () => {
         <h3>FE Developer</h3>
         <p>1995.06.29</p>
         <p>전남 광양 - 부산 대연 - 서울 신림</p>
+        <p>🎹 작곡하는 개발자</p>
       </CardLayout>
     </CardTemplate>
   );
 };
 
-export default Card;
+export default Profile;
