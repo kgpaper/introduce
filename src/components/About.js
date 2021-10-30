@@ -27,6 +27,7 @@ const Image = styled.div`
   background-image: url("img/me.jpeg");
   background-position: center;
   background-size: cover;
+  margin-left: 10px;
 
   @media (min-width: 1300px) {
     width: 270px;
@@ -41,6 +42,7 @@ const Image = styled.div`
 
 const GridWrapper = styled.div`
   margin: 30px auto;
+  margin-left: 20px;
 
   @media (min-width: 1300px) {
     margin-left: -70px;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ContentBlock = styled.div`
   min-height: 500px;
-  width: 400px;
+  width: 90%;
 
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
@@ -23,9 +23,6 @@ const ContentBlock = styled.div`
   color: white;
 
   @media (min-width: 810px) {
-    min-height: 500px;
-    width: 750px;
-
     left: 50%;
     transform: translateX(-50%);
 
@@ -39,11 +36,9 @@ const ContentBlock = styled.div`
     font-family: Cafe24Oneprettynight;
     color: white;
   }
-  
+
   @media (min-width: 1300px) {
-    min-height: 560px;
-    
-    width: 1260px;
+    min-height: 575px;
 
     left: 50%;
     transform: translateX(-50%);
