@@ -5,13 +5,14 @@ import { SiHtml5, SiJavascript, SiPython } from "react-icons/si";
 
 const AboutWrapper = styled.div`
   display: flex;
+  width: 70%;
 `;
 
 const AboutLayout = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 810px) {
+  @media (min-width: 870px) {
     display: grid;
     grid-template-columns: repeat(2, 350px);
     grid-auto-rows: minmax(auto);
@@ -42,10 +43,17 @@ const Image = styled.div`
 
 const GridWrapper = styled.div`
   margin: 30px auto;
-  margin-left: 20px;
+  text-align: center;
+
+  @media (min-width: 870px) {
+    margin: 30px auto;
+    margin-left: 20px;
+    text-align: left;
+  }
 
   @media (min-width: 1300px) {
     margin-left: -70px;
+    text-align: left;
   }
 `;
 

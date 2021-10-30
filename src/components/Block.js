@@ -22,7 +22,7 @@ const ContentBlock = styled.div`
   font-family: Cafe24Oneprettynight;
   color: white;
 
-  @media (min-width: 810px) {
+  @media (min-width: 870px) {
     left: 50%;
     transform: translateX(-50%);
 
