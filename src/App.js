@@ -1,10 +1,11 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import { createGlobalStyle } from "styled-components";
 import Home from "./components/Home";
 import About from "./components/About";
-import Block from "./components/Block";
+
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import "./App.css";
 import Contact from "./components/Contact";
@@ -20,15 +21,22 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <div className="App">
       <GlobalStyle />
       <Header />
-      <Block>
-        <Route path="/introduce/" exact={true} component={Home} />
-        <Route path="/introduce/about" component={About} />
-        <Route path="/introduce/contact" component={Contact} />
-      </Block>
+
+      <TransitionGroup className="transition-group">
+        <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
+          <Switch location={location}>
+            <Route path="/introduce/" exact={true} component={Home} />
+            <Route path="/introduce/about" component={About} />
+            <Route path="/introduce/contact" component={Contact} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
     </div>
   );
 };

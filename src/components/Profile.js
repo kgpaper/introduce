@@ -4,25 +4,20 @@ import styled from "styled-components";
 const CardTemplate = styled.div`
   height: 480px;
 
-  position: relative;
+  position: flex;
   border-radius: 16px;
 
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-
-  padding-left: 26px;
-  padding-right: 26px;
 
   color: white;
 `;
 
 const CardLayout = styled.div`
-  margin: 0 auto;
   diplay: flex;
   text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 ;
   }
 `;

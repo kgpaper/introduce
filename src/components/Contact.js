@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { SiGithub, SiInstagram } from "react-icons/si";
 import { VscMail } from "react-icons/vsc";
+import Block from "./Block";
 
 const ContactLayout = styled.div`
   margin: 0 auto;
+  text-align: center;
+  position: flex;
 
   h1 {
     font-size: 70px;
@@ -51,28 +54,30 @@ const LinkTrans = styled.div`
 
 const Contact = () => {
   return (
-    <ContactLayout>
-      <h1>Contact</h1>
-      <h3>If you want to know more about me...</h3>
+    <Block>
+      <ContactLayout>
+        <h1>Contact</h1>
+        <h3>If you want to know more about me...</h3>
 
-      <LinkTrans>
-        <p>
-          <span onClick={() => window.open("https://github.com/kgpaper", "_blank")}>
-            <SiGithub /> kgpaper
-          </span>
-        </p>
-        <p>
-          <span>
-            <VscMail /> sanha_ovo@kakao.com
-          </span>
-        </p>
-        <p>
-          <span onClick={() => window.open("https://www.instagram.com/life_of_sanha/", "_blank")}>
-            <SiInstagram /> life_of_sanha
-          </span>
-        </p>
-      </LinkTrans>
-    </ContactLayout>
+        <LinkTrans>
+          <p>
+            <span onClick={() => window.open("https://github.com/kgpaper", "_blank")}>
+              <SiGithub /> kgpaper
+            </span>
+          </p>
+          <p>
+            <span>
+              <VscMail /> sanha_ovo@kakao.com
+            </span>
+          </p>
+          <p>
+            <span onClick={() => window.open("https://www.instagram.com/life_of_sanha/", "_blank")}>
+              <SiInstagram /> life_of_sanha
+            </span>
+          </p>
+        </LinkTrans>
+      </ContactLayout>
+    </Block>
   );
 };
 

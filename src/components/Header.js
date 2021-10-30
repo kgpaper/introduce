@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderLayout = styled.div`
-  padding-top: 48px;
+  padding-top: 30px;
   padding-left: 100px;
   padding-right: 32px;
 
   position: relative;
-  max-width: 90%;
+  max-width: 80%;
   height: 100%;
   margin: 0 auto;
 
